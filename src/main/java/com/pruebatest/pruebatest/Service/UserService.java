@@ -22,16 +22,16 @@ public class UserService {
     }
 
 
-    public List<User> getAllUser(){
+    public List<User> getAllUsers(){
         return userRepository.findAll();
     }
 
-    public Optional<User> getUserById(int id){
+    public Optional<User> getUserById(Long id){
         return userRepository.findById(id);
     }
 
 
-    public void deleteUser(int id){
+    public void deleteUser(Long id){
         userRepository.deleteById(id);
     }
 
